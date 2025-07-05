@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run basic Todo list",
+            "command": "frankenphp php-server --listen=:8000",
+            "type": "shell",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}/todo-list-php"
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "group": "none"
+        },
+        {
+            "label": "Run composer Todo list",
+            "command": "frankenphp php-server --listen=:8000",
+            "type": "shell",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}/todo-list-php-composer/public"
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "group": "none"
+        }
+    ]
+}
