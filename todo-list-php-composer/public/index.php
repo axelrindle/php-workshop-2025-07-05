@@ -38,6 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>TODO LISTE</title>
 </head>
 <body>
+    <p style="font-size: 30px; font-weight: bold;">
+        Moin, <?php echo $_SESSION["user"]; ?>
+    </p>
+
     <p class="mb-4">
         Hier wird mit Composer gearbeitet. Jetzt sind wir schon fast richtige
         Php Experten.
