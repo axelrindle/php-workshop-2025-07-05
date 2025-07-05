@@ -1,5 +1,3 @@
-# php-devcontainer-template
+# Php + Laravel Workshop 05.07.2025
 
-> Ready-to-use devcontainer repository template for working with Php projects
-
-Based on our own Php devcontainer image, which lives in [actcoding/php-devcontainer](https://github.com/actcoding/php-devcontainer)
+Projekte aus dem act coding Workshop vom 05.07.2025
