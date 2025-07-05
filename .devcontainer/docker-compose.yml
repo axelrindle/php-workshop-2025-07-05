@@ -1,0 +1,22 @@
+name: php-devcontainer
+
+services:
+  devcontainer:
+    image: ghcr.io/actcoding/php-devcontainer:8.4
+    pull_policy: always
+    volumes:
+      - ../..:/workspaces:cached
+      - dev_home_cache:/home/vscode/.cache
+      - dev_home_local:/home/vscode/.local
+    command: sleep infinity
+
+  caddy:
+    image: caddy:alpine
+    command: caddy reverse-proxy --from localhost:8443 --to devcontainer:8000 --access-log
+    volumes:
+      - caddy_data:/data/caddy
+
+volumes:
+  dev_home_local:
+  dev_home_cache:
+  caddy_data:

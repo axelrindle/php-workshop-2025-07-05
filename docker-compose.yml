@@ -1,0 +1,5 @@
+name: php-devcontainer
+
+services:
+  redis:
+    image: redis:8-alpine
